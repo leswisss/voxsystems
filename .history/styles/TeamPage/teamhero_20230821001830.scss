@@ -1,0 +1,36 @@
+.team__hero{
+  width: 100%;
+  height: 30rem;
+  position: relative;
+
+  .t-hero__image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    img{
+      object-fit: cover;
+    }
+  }
+
+  .thero__text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+
+    .t-hero__overflow{
+      overflow: hidden;
+
+      h3{
+        font-size: calc(var(--h1-font-size) + 1.5rem);
+        font-family: var(--second-font);
+      }
+
+      p{
+        font-size: var(--small-font-size);
+        
+      }
+    }
+  }
+}

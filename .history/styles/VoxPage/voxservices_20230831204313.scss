@@ -1,0 +1,199 @@
+.vox__services {
+  width: 100%;
+  padding: 4rem 0 0;
+
+  .v-services__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+
+    .v-services__header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .vs__overflow {
+        overflow: hidden;
+
+        div {
+          font-size: var(--h1-font-size);
+          font-family: var(--second-font);
+          white-space: nowrap;
+
+          span {
+            color: var(--first-color);
+          }
+        }
+      }
+
+      .vs__overflow-mobile {
+        display: none;
+      }
+    }
+
+    .v-services__content {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .vsd__overflow {
+        overflow: hidden;
+
+        .vs__card {
+          width: 270px;
+          height: 15.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+          padding: 10px 15px;
+          border-radius: 10px;
+          background-color: transparent;
+          user-select: none;
+          transition: all 0.5s ease;
+
+          &:hover {
+            background-color: hsl(227, 86%, 86%);
+          }
+
+          .svg__image {
+            width: 80px;
+            height: 80px;
+            position: relative;
+
+            img {
+              object-fit: cover;
+            }
+          }
+
+          h3 {
+            font-size: var(--small-font-size);
+            font-weight: var(--font-medium);
+          }
+
+          p {
+            font-size: var(--small-font-size);
+            color: var(--text-color-light);
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*========= RESPONSIVE DESIGN ==========*/
+@media screen and (max-width: 950px) {
+  .vox__services {
+    .v-services__container {
+      .v-services__content {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        .vsd__overflow {
+          overflow: hidden;
+
+          .vs__card {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .vox__services {
+    .v-services__container {
+      .v-services__header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+
+        .vs__overflow {
+          display: none;
+        }
+
+        .vs__overflow-mobile {
+          display: block;
+          overflow: hidden;
+          width: 100%;
+          white-space: pre-wrap;
+
+          div {
+            font-size: var(--h1-font-size);
+            font-family: var(--second-font);
+
+            span {
+              color: var(--first-color);
+            }
+          }
+        }
+      }
+
+      .v-services__content {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+
+        .vsd__overflow {
+          overflow: hidden;
+          height: 14.5rem;
+
+          .vs__card {
+            height: 100%;
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .vox__services {
+    .v-services__container {
+      .
+      .v-services__content {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        .vsd__overflow {
+          overflow: hidden;
+          height: 13.5rem;
+
+          .vs__card {
+            height: 100%;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .vox__services {
+    .v-services__container {
+      .v-services__content {
+        .vsd__overflow {
+          .vs__card {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

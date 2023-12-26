@@ -1,0 +1,260 @@
+.p-services__card{
+  width: 100%;
+  aspect-ratio: 16/7.5;
+  position: relative;
+  border-radius: 20px;
+
+
+  .p-card__back{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+
+    img{
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  .card__overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+  .card__content{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 5rem);
+    height: calc(100% - 4rem);
+    border-radius: 20px;
+
+
+    .content__overflow{
+      overflow: hidden;
+
+      .co-header{
+        font-size: var(--h2-font-size);
+        text-transform: uppercase;
+        color: white;
+        font-family: var(--second-font);
+      }
+    }
+
+    .card__content-main{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60%;
+      height: auto;
+
+      .content__overflow{
+        overflow: hidden;
+        
+        .c-content{
+          display: flex;
+          flex-direction: column;
+
+          h3{
+            font-size: var(--h2-font-size);
+            text-transform: uppercase;
+            color: white;
+            font-family: var(--second-font);
+            margin-bottom: 0.5rem;
+          }
+          
+          p{
+            font-size: var(--small-font-size);
+            color: #f5f5f5;
+            margin-bottom: 0.5rem;
+            width: 90%;
+          }
+        }
+
+        .discover-b{
+          display: block;
+          margin-top: 2rem;
+          padding: 12px 30px;
+          color: black;
+          background-color: white;
+          width: max-content;
+          font-size: var(--smaller-font-size);
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+
+          &.outline-b{
+            color: white;
+            background-color: transparent;
+            border: 1px solid white;
+          }
+
+          &:hover{
+            svg{
+              transform: rotate(90deg);
+            }
+          }
+
+          svg{
+            font-size: calc(var(--normal-font-size) + 0.15rem);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+          }
+          
+        }
+      }
+    }
+
+    .p-contact{
+      position: absolute;
+      display: block;
+      width: 140px;
+      aspect-ratio: 1;
+      border: 1px solid white;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      top: 25%;
+      right: 10%;
+      
+      span{
+        color: white;
+        text-align: center;
+        font-size: var(--smaller-font-size);
+      }
+    }
+  }
+}
+
+/*======== RESPONSIVE DESIGN =========*/
+@media screen and (max-width: 1100px) {
+  .p-services__card{
+    aspect-ratio: 16/8.5;
+
+  
+    .card__content{
+
+  
+      .card__content-main{
+        width: 65%;
+
+  
+        .content__overflow{
+          
+          .c-content{
+            h3{
+              font-size: calc(var(--h2-font-size));
+              text-transform: uppercase;
+              color: white;
+              font-family: var(--second-font);
+              margin-bottom: 0.5rem;
+            }
+
+            p{
+              width: 90%;
+            }
+          }
+        }
+      }
+  
+      .p-contact{
+        position: absolute;
+        display: block;
+        width: 130px;
+        aspect-ratio: 1;
+        border: 1px solid white;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        top: 25%;
+        right: 5%;
+        
+        span{
+          color: white;
+          text-align: center;
+          font-size: var(--smaller-font-size);
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  .p-services__card{
+    aspect-ratio: 16/9.5;
+
+  
+    .card__content{
+      width: calc(100% - 4rem);
+      height: calc(100% - 3rem);
+
+      .card__content-main{
+        width: 70%;
+
+  
+        .content__overflow{
+          
+          .c-content{
+            h3{
+              font-size: calc(var(--h2-font-size) - 0.2rem);
+            }
+
+            p{
+              width: 90%;
+            }
+          }
+        }
+      }
+  
+      .p-contact{
+
+        width: 120px;
+        
+        span{
+          color: white;
+          text-align: center;
+          font-size: calc(var(--smaller-font-size));
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .p-services__card{
+    aspect-ratio: 16/12;
+
+  
+    .card__content{
+      width: calc(100% - 3rem);
+      height: calc(100% - 2rem);
+
+      .card__content-main{
+        width: 75%;
+
+      }
+  
+      .p-contact{
+        width: 120px;
+        right: 0%;
+        span{
+          color: white;
+          text-align: center;
+          font-size: calc(var(--smaller-font-size) - 0.1rem);
+        }
+      }
+    }
+  }
+  
+}

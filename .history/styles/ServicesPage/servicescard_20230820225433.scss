@@ -1,0 +1,15 @@
+.p-services__card{
+  width: 100%;
+  aspect-ratio: 16/;
+  position: relative;
+
+  .p-card__back{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    img{
+      object-fit: cover;
+    }
+  }
+}

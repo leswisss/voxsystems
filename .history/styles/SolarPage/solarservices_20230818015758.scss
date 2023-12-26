@@ -1,0 +1,17 @@
+.solar__services{
+  width: 100%;
+  padding: 4rem 0 0;
+
+  .ss__container{
+    height: 30rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+    .ss__left{
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+  }
+}

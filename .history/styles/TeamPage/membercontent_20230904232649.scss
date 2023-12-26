@@ -1,0 +1,136 @@
+.member__content {
+  width: 100%;
+  padding: 4rem 0;
+
+  .m-content__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .m-content__wrapper {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .content__overflow {
+        overflow: hidden;
+
+        &:nth-of-type(1) {
+          width: 35%;
+        }
+
+        &:nth-of-type(2) {
+          width: 50%;
+        }
+
+        .mc__image {
+          position: relative;
+          width: 100%;
+          aspect-ratio: 1/1.5;
+          display: block;
+          border-radius: 20px;
+          overflow: hidden;
+
+          img {
+            object-fit: cover;
+          }
+        }
+
+        .m-content__text {
+          color: var(--text-color-light);
+          line-height: 26px;
+          text-align: justify;
+          font-size: var(--small-font-size);
+        }
+
+        .m__socials {
+          margin-top: 3rem;
+          display: grid;
+          align-items: flex-start;
+          gap: 1rem;
+          width: max-content;
+          height: auto;
+
+          h3 {
+            font-size: var(--smaller-font-size);
+            font-family: var(--second-font);
+            text-transform: uppercase;
+          }
+
+          .social__links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            a {
+              color: var(--text-color-light);
+              font-size: var(--smaller-font-size);
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*======= RESPONSIVE DESIGN ========*/
+@media screen and (max-width: 1150px) {
+  .member__content {
+    .m-content__container {
+      .m-content__wrapper {
+        width: 90%;
+
+        .content__overflow {
+          overflow: hidden;
+
+          &:nth-of-type(1) {
+            width: 40%;
+          }
+
+          &:nth-of-type(2) {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .member__content {
+    .m-content__container {
+      .m-content__wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .member__content {
+    .m-content__container {
+      .m-content__wrapper {
+
+        .content__overflow {
+          overflow: hidden;
+
+          &:nth-of-type(1) {
+            width: 43%;
+          }
+
+          &:nth-of-type(2) {
+            width: 50%;
+          }
+
+          .m-content__text {
+            line-height: 26px;
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.solar__video {
+  width: 100%;
+  height: auto;
+  padding-top: 4rem;
+
+  .solar__video-container{
+    .video-js{
+      width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

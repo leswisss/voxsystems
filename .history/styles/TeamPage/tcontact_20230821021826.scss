@@ -1,0 +1,25 @@
+.team__contact{
+  width: 100%;
+  height: 30rem;
+  padding:  4rem 0;
+  background-color: white;
+
+  .tc__container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    .tc__overflow{
+      overflow: hidden;
+
+      .tc__header{
+        font-size: var(--h3-font-size);
+        text-transform: uppercase;
+        font-family: var(--second-font);
+        text-align: center;
+      }
+    }
+  }
+}

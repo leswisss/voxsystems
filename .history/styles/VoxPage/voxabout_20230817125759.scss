@@ -1,0 +1,55 @@
+.vox__about{
+  width: 100%;
+  padding: 4rem 0;
+
+  .vox__about-container{
+    height: 40rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    
+    .va-top{
+      display: grid;
+      grid-template-columns: 400px 1fr 400px;
+
+      .va__overflow{
+        overflow: hidden;
+        position: relative;
+
+        img{
+          object-fit: cover;
+        }
+
+        
+      }
+    }
+
+    .va-bottom{
+      display: grid;
+      grid-template-columns: 1fr 400px 1fr;
+
+      .va__overflow{
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        img{
+          object-fit: cover;
+        }
+
+        p{
+          width: 90%;
+          height: auto;
+          margin-top: auto;
+          color: var(--text-color-light);
+          font-weight: var(--font-light);
+          text-align: justify;
+
+          &.vap-2{
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}

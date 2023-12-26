@@ -1,0 +1,38 @@
+.vox__services{
+  width: 100%;
+  padding: 4rem 0;
+
+  .v-services__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+    .v-services__header{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .vs__overflow{
+        overflow: hidden;
+        
+        div{
+          font-size: var(--h1-font-size);
+          font-family: var(--second-font);
+          color: white;
+          white-space: nowrap;
+
+          span{
+            color: var(--first-color)
+          }
+        }
+      }
+    }
+
+    .v-services__content{
+      width: 100%;
+      height: 20rem;
+      display: g;
+    }
+  }
+}

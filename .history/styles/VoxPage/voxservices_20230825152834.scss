@@ -1,0 +1,76 @@
+.vox__services {
+  width: 100%;
+  padding: 4rem 0 0;
+
+  .v-services__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+
+    .v-services__header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .vs__overflow {
+        overflow: hidden;
+
+        div {
+          font-size: var(--h1-font-size);
+          font-family: var(--second-font);
+          white-space: nowrap;
+
+          span {
+            color: var(--first-color);
+          }
+        }
+      }
+    }
+
+    .v-services__content {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .vsd__overflow {
+        overflow: hidden;
+        background-color: green;
+
+        .vs__card {
+          width: 270px;
+          height: 15rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+          padding: 5px 10px;
+          
+
+          .svg__image {
+            width: 80px;
+            height: 80px;
+            position: relative;
+
+            img {
+              object-fit: cover;
+            }
+          }
+
+          h3 {
+            font-size: var(--small-font-size);
+            font-weight: var(--font-medium);
+          }
+
+          p {
+            font-size: var(--small-font-size);
+            color: var(--text-color-light);
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}

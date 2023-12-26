@@ -1,0 +1,26 @@
+"use client";
+
+import React, { useEffect } from 'react'
+import Image from 'next/image'
+
+const TeamHero = () => {
+  
+  useEffect(() => {
+    (
+      async () => {
+        const LocomotiveScroll = (await import ('locomotive-scroll')).default;
+        const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  }, [])
+
+  return (
+    <section className="team__hero">
+      <div className="t-hero__image">
+        <Image /> 
+      </div>
+    </section>
+  )
+}
+
+export default TeamHero

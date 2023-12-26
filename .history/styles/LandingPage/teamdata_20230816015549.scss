@@ -1,0 +1,25 @@
+.team-data__container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 3rem 0;
+  border-top: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+
+  .user__status{
+    span{
+      font-family: var(--second-font);
+    }
+  }
+
+  .user__name-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .user__name{
+      font-size: calc(var(--h1-font-size) + 0.5rem);
+      font-weight: var(--font-medium);
+    }
+  }
+}

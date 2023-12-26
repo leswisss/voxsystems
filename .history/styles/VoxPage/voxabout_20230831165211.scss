@@ -1,0 +1,143 @@
+.vox__about{
+  width: 100%;
+  padding: 4rem 0;
+
+  .vox__about-container{
+    height: 40rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    
+    .va-top{
+      display: grid;
+      grid-template-columns: 400px 1fr 400px;
+
+      .va__overflow{
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+
+        img{
+          object-fit: cover;
+        }
+
+        .va-header{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: var(--h2-font-size);
+          font-family: var(--second-font);
+          white-space: nowrap;
+
+          .va-nous{
+            color: var(--first-color);
+          }
+        }
+      }
+    }
+
+    .va-bottom{
+      display: grid;
+      grid-template-columns: 1fr 400px 1fr;
+
+      .va__overflow{
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+        img{
+          object-fit: cover;
+          border-radius: 15px;
+        }
+
+        p{
+          width: 90%;
+          height: auto;
+          margin-top: auto;
+          color: var(--text-color-light);
+          font-weight: var(--font-light);
+          text-align: justify;
+          font-size: var(--small-font-size);
+          line-height: 25px;
+
+          &.vap-2{
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*========== RESPONSIVE DESIGN =========*/
+@media screen and (max-width: 1300px) {
+  .vox__about{
+  
+    .vox__about-container{
+      height: 40rem;
+
+      
+      .va-top{
+
+        grid-template-columns: 350px 1fr 300px;
+  
+        .va__overflow{
+          overflow: hidden;
+          position: relative;
+          border-radius: 15px;
+  
+          img{
+            object-fit: cover;
+          }
+  
+          .va-header{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: var(--h2-font-size);
+            font-family: var(--second-font);
+            white-space: nowrap;
+  
+            .va-nous{
+              color: var(--first-color);
+            }
+          }
+        }
+      }
+  
+      .va-bottom{
+        display: grid;
+        grid-template-columns: 1fr 400px 1fr;
+  
+        .va__overflow{
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          
+          img{
+            object-fit: cover;
+            border-radius: 15px;
+          }
+  
+          p{
+            width: 90%;
+            height: auto;
+            margin-top: auto;
+            color: var(--text-color-light);
+            font-weight: var(--font-light);
+            text-align: justify;
+            font-size: var(--small-font-size);
+            line-height: 25px;
+  
+            &.vap-2{
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

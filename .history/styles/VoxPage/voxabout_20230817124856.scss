@@ -1,0 +1,28 @@
+.vox__about{
+  width: 100%;
+  padding: 4rem 0;
+
+  .vox__about-container{
+    height: 40rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    
+    .va-top{
+      display: grid;
+      grid-template-columns: 400px 1fr 400px;
+
+      .va__overflow{
+        overflow: hidden;
+
+        img{
+          object-fit: cover;
+        }
+      }
+    }
+
+    .va-bottom{
+      display: grid;
+      grid-template-columns: 1fr 400px 1fr;
+    }
+  }
+}

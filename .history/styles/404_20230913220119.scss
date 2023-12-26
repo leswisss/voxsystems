@@ -1,0 +1,37 @@
+.not__found{
+  background-color: var(--first-color);
+  width: 100%;
+  height: 100vh;
+
+  .not__found-container{
+    position: relative;
+    height: 100%;
+
+    .not-found__overflow{
+      overflow: hidden;
+
+      h3{
+        font-size: calc(var(--h1-font-size) + 2rem);
+        font-family: var(--second-font);
+        color: white;
+        text-transform: uppercase;
+      }
+
+      &:nth-of-type(1){
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:nth-of-type(1){
+        position: absolute;
+        top: 30%;
+        right: 10%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+
+}

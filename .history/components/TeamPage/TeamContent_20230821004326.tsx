@@ -1,0 +1,14 @@
+import React from 'react'
+import TeamBottom from '../HomePage/TeamBottom'
+
+const TeamContent = () => {
+  return (
+    <section className="team__content">
+      <div className="container tc__container">
+
+      </div>
+    </section>
+  )
+}
+
+export default TeamContent

@@ -1,0 +1,69 @@
+.vox__hero{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .background__images{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    filter: brightness(80%);
+
+    img{
+      object-fit: cover;
+    }
+  }
+
+  .vox__hero-container{
+    height: 100vh;
+    transform: translateY(-100%);
+    position: relative;
+
+    .vox__hero-slogan{
+      position: absolute;
+      top: 35%;
+      left: 0;
+
+      .vox__overflow{
+        overflow: hidden;
+        font-size: calc(var(--h1-font-size) + 1rem);
+        font-family: var(--second-font);
+        color: white;
+
+        .v-automatisez{
+          color: var(--first-color)
+        }
+
+        span{
+          position: relative;
+        }
+      }
+    }
+
+    .vox__hero-text{
+      width: 430px;
+      height: 120px;
+      background-color: rgba(255,255,255,0.2);
+      position: absolute;
+      bottom: 10%;
+      right: 0;
+      backdrop-filter: blur(2px);
+      border-radius: 70px;
+
+
+      p{
+        font-size: var(--smaller-font-size);
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        width: 390px;
+        height: 56px;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

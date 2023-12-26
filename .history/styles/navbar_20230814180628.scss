@@ -1,0 +1,23 @@
+.navigation{
+  width: 100%;
+  height: var(--header-height);
+  background-color: orange;
+
+  .navigation__container{
+    height: 100%;
+
+    .navbar{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo{
+        font-size: var(--h1-font-size);
+        font-family: var(--b);
+        color: white;
+      }
+    }
+  }
+}

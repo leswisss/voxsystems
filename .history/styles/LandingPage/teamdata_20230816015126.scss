@@ -1,0 +1,12 @@
+.team-data__container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 3rem 0;
+
+  .user__status{
+    span{
+      font-family: var(--second-font);
+    }
+  }
+}

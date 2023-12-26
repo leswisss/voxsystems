@@ -1,0 +1,59 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 800;
+  // pointer-events: none;
+  background: transparent;
+
+  .loading__screen {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    will-change: top;
+    background-color: var(--first-color);
+
+    .home__active{
+      position: absolute;
+      top: 47%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+
+      .preload__overflow{
+        overflow: hidden;
+        color: white;
+        
+        h3{
+          font-size: calc(var(--h2-font-size) + 0.2rem);
+          font-family: var(--second-font);
+          // display: inline-flex;
+          
+          // span{
+          //   display: inline-flex;
+          // }
+        }
+
+        p{
+          font-size: var(--smaller-font-size);
+          font-weight: var(--font-light);
+          display: inline-flex;
+          gap: 0.4rem;
+          font-family: var(--second-font);
+
+          span{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

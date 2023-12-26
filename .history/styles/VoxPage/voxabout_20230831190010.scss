@@ -1,0 +1,365 @@
+.vox__about {
+  width: 100%;
+  padding: 4rem 0;
+
+  .vox__about-container {
+    height: 40rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+    .va-top {
+      display: grid;
+      grid-template-columns: 400px 1fr 400px;
+
+      .va__overflow {
+        overflow: hidden;
+        position: relative;
+
+        .va-image {
+          position: relative;
+          border-radius: 15px;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+
+          img {
+            object-fit: cover;
+          }
+        }
+
+        .va-header {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: var(--h2-font-size);
+          font-family: var(--second-font);
+          white-space: nowrap;
+
+          .va-nous {
+            color: var(--first-color);
+          }
+        }
+      }
+    }
+
+    .va-bottom {
+      display: grid;
+      grid-template-columns: 1fr 400px 1fr;
+
+      .va__overflow {
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .va-image {
+          position: relative;
+          border-radius: 15px;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+
+          img {
+            object-fit: cover;
+            border-radius: 15px;
+          }
+        }
+
+        p {
+          width: 90%;
+          height: auto;
+          margin-top: auto;
+          color: var(--text-color-light);
+          font-weight: var(--font-light);
+          text-align: justify;
+          font-size: var(--small-font-size);
+          line-height: 25px;
+
+          &.vap-2 {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*========== RESPONSIVE DESIGN =========*/
+@media screen and (max-width: 1280px) {
+  .vox__about {
+    .vox__about-container {
+      height: 40rem;
+
+      .va-top {
+        grid-template-columns: 350px 1fr 350px;
+
+        .va__overflow {
+          .va-image {
+            height: 90%;
+          }
+        }
+      }
+
+      .va-bottom {
+        grid-template-columns: 1fr 350px 1fr;
+
+        .va__overflow {
+          .va-image {
+            height: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .vox__about {
+    .vox__about-container {
+      .va-top {
+        grid-template-columns: 300px 1fr 300px;
+      }
+
+      .va-bottom {
+        display: grid;
+        grid-template-columns: 1fr 300px 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .vox__about {
+    .vox__about-container {
+      height: 35rem;
+
+      .va-top {
+        grid-template-columns: 250px 1fr 250px;
+      }
+
+      .va-bottom {
+        display: grid;
+        grid-template-columns: 1fr 250px 1fr;
+
+        .va__overflow {
+          p {
+            width: 90%;
+            font-size: var(--smaller-font-size);
+            line-height: 24px;
+
+            &.vap-2 {
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .vox__about {
+    width: 100%;
+    padding: 4rem 0;
+
+    .vox__about-container {
+      height: 80rem;
+      grid-template-rows: 550px 1fr;
+
+      .va-top {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 240px 1fr 240px;
+
+        .va__overflow {
+          overflow: hidden;
+          position: relative;
+          width: 50%;
+          height: 100%;
+
+          .va-image {
+            height: 100%;
+
+            img {
+              object-fit: cover;
+            }
+          }
+
+          &:nth-of-type(2) {
+            width: 100%;
+          }
+
+          &:nth-of-type(3) {
+            margin-left: auto;
+          }
+        }
+      }
+
+      .va-bottom {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 240px 1fr;
+
+        .va__overflow {
+          width: 50%;
+
+          &:nth-of-type(2) {
+            margin-left: auto;
+          }
+
+          .va-image {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+
+            img {
+              object-fit: cover;
+              border-radius: 15px;
+            }
+          }
+
+          p {
+            width: 95%;
+
+            &.vap-2 {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .vox__about {
+    .vox__about-container {
+      height: 80rem;
+      grid-template-rows: 550px 1fr;
+
+      .va-top {
+        grid-template-rows: 240px 1fr 240px;
+
+        .va__overflow {
+          overflow: hidden;
+          position: relative;
+          width: 50%;
+          height: 100%;
+        }
+      }
+
+      .va-bottom {
+        gap: 1rem;
+
+        .va__overflow {
+          width: 60%;
+
+          &:nth-of-type(2) {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .vox__about {
+    .vox__about-container {
+
+      .va-bottom {
+        .va__overflow {
+          width: 70%;
+
+          &:nth-of-type(2) {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .vox__about {
+    .vox__about-container {
+
+      .va-top {
+
+        .va__overflow {
+          width: 60%;
+          height: 100%;
+        }
+      }
+
+      .va-bottom {
+
+        .va__overflow {
+          width: 80%;
+
+          &:nth-of-type(2) {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .vox__about {
+
+    .vox__about-container {
+      height: 85rem;
+      .va-top {
+
+        .va__overflow {
+          width: 90%;
+          height: 100%;
+        }
+      }
+
+      .va-bottom {
+
+        .va__overflow {
+          width: 90%;
+
+          &:nth-of-type(2) {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .vox__about {
+
+    .vox__about-container {
+
+      .va-top {
+
+        .va__overflow {
+          width: 100%;
+        }
+      }
+
+      .va-bottom {
+
+        .va__overflow {
+          width: 100%;
+
+          &:nth-of-type(2) {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}

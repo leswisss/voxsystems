@@ -1,0 +1,38 @@
+.services__page{
+  width: 100%;
+  padding: 0 0 4rem;
+
+  .p-services__header{
+    width: 100%;
+    height: 35rem;
+    padding: 5rem 0 0;
+    background: black;
+    color: white;
+
+    .s-header__container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      .p__ser-overflow{
+        overflow: hidden;
+
+        .ps__header{
+          font-size: calc(var(--h1-font-size) + 1.5rem);
+          font-family: var(--second-font);
+
+          span{
+            color: var(--first-color)
+          }
+        }
+
+        .ps__para{
+          font-size: var(--small-font-size);
+          color: var(--grey);
+          margin-top: 1rem;;
+        }
+      }
+    }
+  }
+}

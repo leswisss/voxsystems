@@ -1,0 +1,46 @@
+.about__hero{
+  width: 100%;
+  height: 40rem;
+  position: relative;
+
+  .ahero__image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    img{
+      object-fit: cover;
+      object-position: 0% 20%;
+    }
+  }
+
+  .ahero__overlay{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: hsla(22, 53, 56, 15%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .ahero__header{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    .ahero__overflow{
+      overflow: hidden;
+
+      h3{
+        font-size: calc(var(--h1-font-size) + 1.5rem);
+        
+      }
+    }
+    
+  }
+
+}

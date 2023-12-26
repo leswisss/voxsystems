@@ -1,0 +1,19 @@
+.solar__video{
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  .solar__video-container{
+    .cld-video-player{
+
+      .cld-fluid {
+        width: 100%;
+        max-width: 100%;
+
+        video-js .vjs-tech {
+          position: absolute;
+          top: 0;
+          left: 0;
+    }
+  }
+}

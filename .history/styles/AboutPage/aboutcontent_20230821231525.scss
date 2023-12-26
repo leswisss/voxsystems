@@ -1,0 +1,37 @@
+.about__content{
+  width: 100%;
+  height: auto;
+  padding: 4rem 0;
+
+  .a-about__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+
+    .acontent__wrapper{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .acontent__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .acontent__overflow{
+          overflow: hidden;
+
+          h3{
+            font-family: var(--second-font);
+            font-size: var(--);
+          }
+        }
+      }
+      
+    }
+  }
+}

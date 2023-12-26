@@ -1,0 +1,47 @@
+.team-data__container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--grey);
+  color: black;
+  opacity: 1;
+
+
+  &:hover{
+    opacity: 0.5;
+
+    .user__status{
+
+    }
+  }
+
+  .user__status{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    
+
+    span{
+      font-family: var(--second-font);
+      transition: all 0.5s ease;
+    }
+  }
+
+  .user__name-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .user__name{
+      font-size: calc(var(--h1-font-size) + 1rem);
+    }
+
+    .user__status-2{
+      font-family: var(--second-font);
+      color: var(--text-color-light);
+      font-size: var(--smaller-font-size);
+    }
+  }
+}

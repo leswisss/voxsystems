@@ -1,0 +1,82 @@
+.solar__video {
+  width: 100%;
+  height: auto;
+  padding-top: 4rem;
+
+  .solar__video-container {
+    .vvideo__container {
+      width: 90%;
+      height: auto;
+      aspect-ratio: 2730/1440;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+
+      .video-js {
+        width: 100%;
+        height: 100%;
+
+        .vjs-big-play-button{
+          display: none;
+        }
+      }
+
+      .vvideo__cover{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.2);
+        display: block;
+
+        .vv-content{
+          width: 85%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          position: absolute;
+          bottom: 5%;
+          left: 50%;
+          transform: translateX(-50%);
+          color: white;
+
+          .text__content{
+            .v-overflow{
+              overflow: hidden;
+
+              p{
+                font-size: var(--h2-font-size);
+                font-family: var(--second-font);
+
+                span{
+                  color: var(--first-color);
+                }
+              }
+            }
+          }
+
+          .vv-play{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+
+            svg{
+              color: var(--first-color);
+              font-size: var(--h2-font-size);
+              pointer-events: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

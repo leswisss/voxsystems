@@ -1,0 +1,65 @@
+.solar{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+
+  .solar-hero__container{
+    position: relative;
+    height: 100%;
+
+    .s-hero__text{
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      .s-hero__header{
+        display: flex;
+        flex-direction: column;
+        font-size: var(--h2-font-size);
+        font-family: var(--second-font);
+        gap: 0.5rem;
+        align-items: center;
+        
+        .sh__overflow{
+          overflow: hidden;
+
+          p{
+            text-align: center;
+            color: white;
+
+            span{
+              color: var(--first-color)
+            }
+          }
+        }
+      }
+
+      .sh__desc{
+        display: flex;
+        flex-direction: column;
+        font-size: var(--small-font-size);
+        gap: 0.2rem;
+        align-items: center;
+        
+        .sh__overflow{
+          overflow: hidden;
+
+          p{
+            text-align: center;
+            color: var(--grey);
+          }
+        }
+      }
+
+      .sh__cta{
+
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+
+  .footer__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .footer__top{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .f-top__header{
+        display: grid;
+        gap: 1rem;
+
+        .footer__overflow{
+          overflow: hidden;
+
+          .f-logo{
+            font-size: var(--h1-font-size);
+            color: white;
+            font-family: var(--second-font);
+
+            span{
+              
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.navigation{
+  width: 100%;
+  height: var(--header-height);
+  background-color: orange;
+
+  .navigation__container{
+    height: 100%;
+
+    .navbar{}
+  }
+}

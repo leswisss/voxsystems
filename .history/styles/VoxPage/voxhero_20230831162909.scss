@@ -1,0 +1,205 @@
+.vox__hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .background__images {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    filter: brightness(70%);
+    background-size: cover;
+  }
+
+  .vox__hero-container {
+    height: 100vh;
+    transform: translateY(-100%);
+    position: relative;
+
+    .vox__hero-slogan {
+      position: absolute;
+      top: 35%;
+      left: 0;
+
+      .vox__overflow {
+        overflow: hidden;
+        font-size: calc(var(--h1-font-size) + 1rem);
+        font-family: var(--second-font);
+        color: white;
+
+        .v-automatisez {
+          color: var(--first-color);
+        }
+
+        span {
+          position: relative;
+        }
+      }
+
+      .vox__overflow-mobile{
+        display: none;
+      }
+    }
+
+    .vox__hero-text {
+      width: 430px;
+      height: 100px;
+      background-color: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      bottom: 10%;
+      right: 0;
+      backdrop-filter: blur(1px);
+      border-radius: 20px;
+
+      p {
+        font-size: var(--smaller-font-size);
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        width: 390px;
+        height: 56px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .vox__explore {
+      position: absolute;
+      bottom: 22%;
+      left: 0;
+      color: white;
+      font-size: var(--smaller-font-size);
+      transform-origin: bottom left;
+      transform: rotate(90deg);
+
+      span {
+        letter-spacing: 1px;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+
+        svg {
+          transform: rotate(90deg);
+          font-size: var(--normal-font-size);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .vox__hero {
+    height: 90vh;
+
+    .background__images {
+      height: 90vh;
+    }
+
+    .vox__hero-container {
+      height: 90vh;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .vox__hero {
+
+
+
+    .vox__hero-container {
+
+  
+      .vox__hero-slogan {
+  
+        .vox__overflow {
+          overflow: hidden;
+          font-size: calc(var(--h1-font-size) + 0.7rem);
+          font-family: var(--second-font);
+          color: white;
+        }
+      }
+  
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .vox__hero {
+
+    height: 100vh;
+
+  
+    .background__images {
+
+      height: 100vh;
+
+    }
+  
+    .vox__hero-container {
+      height: 100vh;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .vox__hero {
+  
+    .vox__hero-container {
+
+      .vox__hero-text {
+        width: 100%;
+        height: 90px;
+  
+        p {
+          width: 85%;
+          height: max-content;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .vox__hero-slogan {
+  
+        .vox__overflow {
+          overflow: hidden;
+          font-size: calc(var(--h1-font-size) + 0.5rem);
+          font-family: var(--second-font);
+          color: white;
+        }
+
+        .vox__overflow-mobile{
+          display: block;
+          overflow: hidden;
+
+          
+        }
+      }
+  
+      .vox__explore {
+        position: absolute;
+        bottom: 22%;
+        left: 0;
+        color: white;
+        font-size: var(--smaller-font-size);
+        transform-origin: bottom left;
+        transform: rotate(90deg);
+  
+        span {
+          letter-spacing: 1px;
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+  
+          svg {
+            transform: rotate(90deg);
+            font-size: var(--normal-font-size);
+          }
+        }
+      }
+    }
+  }
+}

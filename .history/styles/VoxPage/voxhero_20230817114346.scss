@@ -1,0 +1,58 @@
+.vox__hero{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .background__images{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    filter: brightness(80%);
+
+    img{
+      object-fit: cover;
+    }
+  }
+
+  .vox__hero-container{
+    height: 100vh;
+    transform: translateY(-100%);
+    position: relative;
+
+    .vox__hero-slogan{
+      position: absolute;
+      top: 35%;
+      left: 0;
+
+      .vox__overflow{
+        overflow: hidden;
+        font-size: calc(var(--h1-font-size) + 1rem);
+        font-family: var(--second-font);
+        color: white;
+
+        .v-automatisez{
+          color: var(--first-color)
+        }
+
+        span{
+          position: relative;
+        }
+      }
+    }
+
+    .vox__hero-text{
+      width: 400px;
+      height: auto;
+      overflow: hidden;
+      position: absolute;
+      bottom: 10%;
+      right: 0;
+
+      p{
+        font-size: var(--small-font-size);
+        
+      }
+    }
+  }
+}

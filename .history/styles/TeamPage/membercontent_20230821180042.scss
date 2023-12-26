@@ -1,0 +1,26 @@
+.member__content{
+  width: 100%;
+  padding: 4rem 0;
+
+  .m-content__container{
+    
+    .m-content__wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .content__overflow{
+        overflow: hidden;
+
+        .mc__image{
+          position: relative;
+          width: 30%;
+          aspect-ratio: 1/1.5;
+
+          
+        }
+      }
+    }
+  }
+}

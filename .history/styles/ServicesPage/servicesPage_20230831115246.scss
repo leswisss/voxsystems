@@ -1,0 +1,174 @@
+.services__page{
+  width: 100%;
+
+  .p-services__header{
+    width: 100%;
+    height: 35rem;
+    padding: 5rem 0 0;
+    background: black;
+    color: white;
+    position: relative;
+
+    .s-header__container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 50%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .p__ser-overflow{
+        overflow: hidden;
+        width: 100%;
+
+        .ps__header{
+          font-size: calc(var(--h1-font-size) + 1.5rem);
+          font-family: var(--second-font);
+
+          span{
+            color: var(--first-color)
+          }
+        }
+
+        .ps__para{
+          font-size: var(--small-font-size);
+          color: var(--grey);
+          margin-top: 1rem;
+          width: 85%;
+        }
+      }
+    }
+  }
+
+  .p-services__con{
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+}
+
+/*========= RESPONSIVE DESIGN ==========*/
+@media screen and (max-width: 950px) {
+  .services__page{
+
+  
+    .p-services__header{
+      height: 35rem;
+
+  
+      .s-header__container{
+        width: 70%;
+
+        .p__ser-overflow{
+
+          .ps__para{
+
+            width: 90%;
+          }
+        }
+      }
+    }
+  
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .services__page{
+
+  
+    .p-services__header{
+
+
+  
+      .s-header__container{
+        width: 75%;
+
+        .p__ser-overflow{
+
+          .ps__para{
+            width: 90%;
+          }
+        }
+      }
+    }
+  
+  }
+}
+
+
+@media screen and (max-width: 765px) {
+  .services__page{
+
+  
+    .p-services__header{
+
+      .s-header__container{
+        width: 85%;
+
+        .p__ser-overflow{
+
+          .ps__para{
+            width: 90%;
+          }
+        }
+      }
+    }
+  
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .services__page{
+
+  
+    .p-services__header{
+
+      .s-header__container{
+        width: 90%;
+
+        .p__ser-overflow{
+
+          .ps__para{
+            width: 90%;
+          }
+        }
+      }
+    }
+  
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .services__page{
+    .p-services__header{
+
+      .s-header__container{
+        width: 80%;
+
+        .p__ser-overflow{
+          .ps__header{
+            font-size: calc(var(--h1-font-size) + 1rem);
+  
+            span{
+              color: var(--first-color)
+            }
+          }
+  
+          .ps__para{
+            font-size: var(--small-font-size);
+            color: var(--grey);
+            margin-top: 1rem;
+            width: 85%;
+          }
+        }
+      }
+    }
+  
+  }
+}

@@ -1,0 +1,38 @@
+.ourteam{
+  width: 100%;
+  padding: 5rem 0 0;
+
+  .ourteam__container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .team__top{
+      width: 100%;
+      
+      .team__top-1{
+        display: flex;
+        gap: 2rem;
+        align-items: flex-end;
+
+        .team__overflow{
+          overflow: hidden;
+
+          .team__image-1{
+            width: 350px;
+            aspect-ratio: 1;
+            position: relative;
+
+            img{
+              object-fit: cover;
+            }
+          }
+
+          p{
+            font-family: var();
+          }
+        }
+      }
+    }
+  }
+}

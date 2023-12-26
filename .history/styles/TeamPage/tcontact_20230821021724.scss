@@ -1,0 +1,17 @@
+.team__contact{
+  width: 100%;
+  height: 30rem;
+  padding:  4rem 0;
+  background-color: white;
+
+  .tc__container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .tc__overflow{
+      overflow: hidden;
+      
+    }
+  }
+}

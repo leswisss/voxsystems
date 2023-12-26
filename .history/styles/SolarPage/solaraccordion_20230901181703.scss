@@ -1,0 +1,197 @@
+.accordion__wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 0rem;
+  border-bottom: 1px solid var(--grey);
+  padding-bottom: 1.5rem;
+
+  .accordion__header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    font-size: var(--small-font-size);
+    cursor: pointer;
+
+    .accordion-h{
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      font-weight: var(--font-medium);
+
+      span{
+        color: var(--text-color-light)
+      }
+  
+      .ssa__header{
+        text-transform: uppercase;
+        color: black;
+      }
+    }
+
+    svg{
+      font-size: var(--normal-font-size);
+      transition: all 0.5s ease;
+      color: var(--text-color-light);
+    }
+
+  }
+
+  .accordion__content{
+    width: 100%;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.87, 0, 0.13, 1);
+    height: 0rem;
+
+    &.active_s-accordion{
+      height: 18rem;
+    }
+
+    .ac__container{
+      padding-top: 1.5rem;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 43% 1fr;
+      column-gap: 2rem;
+
+      .ac__image{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 20px;
+
+        img{
+          object-fit: cover;
+          border-radius: 20px;
+        }
+      }
+
+      .ac__text{
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        p{
+          color: var(--text-color-light);
+          font-size: var(--small-font-size);
+          text-align: justify;
+          font-weight: var(--font-light);
+          width: 100%;
+          line-height: 25px;
+        }
+
+        a{
+          display: flex;
+          padding: 12px 20px;
+          align-items: center;
+          background-color: var(--first-color);
+          color: white;
+          font-size: var(--tiny-font-size);
+          border-radius: 40px;
+          gap: 0.5rem;
+          font-weight: var(--font-normal);
+
+          &:hover {
+            svg{
+              transform: rotate(90deg);
+            }
+          }
+
+          svg{
+            font-size: var(--small-font-size);
+            transition: all 0.5s ease;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*========== RESPONSIVE DESIGN ==========*/
+@media screen and (max-width: 600px) {
+  .accordion__wrapper{
+
+    .accordion__content{
+      width: 100%;
+      overflow: hidden;
+      transition: all 1s cubic-bezier(0.87, 0, 0.13, 1);
+      height: 0rem;
+  
+      &.active_s-accordion{
+        height: 25rem;
+      }
+  
+      .ac__container{
+        padding-top: 1.5rem;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 150px 1fr;
+        column-gap: 2rem;
+  
+        .ac__image{
+          width: 100%;
+          height: 100%;
+          position: relative;
+          border-radius: 20px;
+  
+          img{
+            object-fit: cover;
+            border-radius: 20px;
+          }
+        }
+  
+        .ac__text{
+  
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+  
+          p{
+            color: var(--text-color-light);
+            font-size: var(--small-font-size);
+            text-align: justify;
+            font-weight: var(--font-light);
+            width: 100%;
+            line-height: 25px;
+          }
+  
+          a{
+            display: flex;
+            padding: 12px 20px;
+            align-items: center;
+            background-color: var(--first-color);
+            color: white;
+            font-size: var(--tiny-font-size);
+            border-radius: 40px;
+            gap: 0.5rem;
+            font-weight: var(--font-normal);
+  
+            &:hover {
+              svg{
+                transform: rotate(90deg);
+              }
+            }
+  
+            svg{
+              font-size: var(--small-font-size);
+              transition: all 0.5s ease;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

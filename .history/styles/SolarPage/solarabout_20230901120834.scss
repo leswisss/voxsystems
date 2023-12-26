@@ -1,0 +1,276 @@
+.solar__about {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: white;
+  font-weight: var(--font-light);
+
+  .sa__container {
+    height: 40rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+    .sa__top,
+    .sa__bottom {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 5rem;
+
+      .sa-top__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        .sa__overflow {
+          overflow: hidden;
+
+          p {
+            font-size: var(--h3-font-size);
+            font-family: var(--second-font);
+            white-space: nowrap;
+
+            span {
+              color: var(--first-color);
+            }
+          }
+        }
+
+        .sa__over-mobile {
+          display: none;
+          overflow: hidden;
+        }
+      }
+      .sa-top__right {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .sa__image-1 {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          border-radius: 15px;
+          overflow: hidden;
+
+          img {
+            object-fit: cover;
+          }
+        }
+      }
+
+      .sa-bottom__left {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .sa__image-2 {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          border-radius: 15px;
+          overflow: hidden;
+
+          img {
+            object-fit: cover;
+          }
+        }
+      }
+
+      .sa-bottom__right {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        p {
+          width: 100%;
+          text-align: justify;
+          font-size: var(--small-font-size);
+          line-height: 25px;
+          color: var(--text-color-light);
+        }
+      }
+    }
+  }
+}
+
+/*========== RESPONSIVE DESIGN ==========*/
+@media screen and (max-width: 1070px) {
+  .solar__about {
+    .sa__container {
+      height: 35rem;
+
+      .sa__top,
+      .sa__bottom {
+        .sa-top__left {
+          .sa__overflow {
+            overflow: hidden;
+            display: none;
+          }
+
+          .sa__over-mobile {
+            display: block;
+            overflow: hidden;
+
+            p {
+              font-size: var(--normal-font-size);
+              font-family: var(--second-font);
+              white-space: pre-wrap;
+              line-height: 27px;
+
+              span {
+                color: var(--first-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .solar__about {
+    .sa__container {
+      height: 35rem;
+
+      .sa__top,
+      .sa__bottom {
+        gap: 2rem;
+
+        .sa-top__left {
+          .sa__overflow {
+            overflow: hidden;
+
+            p {
+              font-size: var(--normal-font-size);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .solar__about {
+    .sa__container {
+      height: 50rem;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 2rem;
+
+      .sa__top {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 230px;
+        gap: 0;
+
+        .sa-top__left {
+          .sa__over-mobile {
+            display: block;
+            overflow: hidden;
+            width: 80%;
+            margin: 0 auto;
+
+            p {
+              font-size: var(--normal-font-size);
+              font-family: var(--second-font);
+              white-space: pre-wrap;
+              line-height: 23px;
+
+              span {
+                color: var(--first-color);
+              }
+            }
+          }
+        }
+
+        .sa-top__right {
+          .sa__image-1 {
+            width: 80%;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      .sa__bottom {
+        grid-template-columns: none;
+        grid-template-rows: 230px 1fr;
+
+        .sa-bottom__left {
+          .sa__image-2 {
+            width: 80%;
+            margin: 0 auto;
+          }
+        }
+
+        .sa-bottom__right {
+          width: 80%;
+          height: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 710px) {
+  .solar__about {
+    .sa__container {
+      height: 55rem;
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .solar__about {
+
+    .sa__container {
+      height: 55rem;
+
+      .sa__top {
+
+
+        .sa-top__left {
+          .sa__over-mobile {
+            width: 100%;
+          }
+        }
+
+        .sa-top__right {
+          .sa__image-1 {
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      .sa__bottom {
+        grid-template-columns: none;
+        grid-template-rows: 230px 1fr;
+
+        .sa-bottom__left {
+          .sa__image-2 {
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+
+        .sa-bottom__right {
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: ) {
+  
+}
+

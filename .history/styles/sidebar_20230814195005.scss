@@ -1,0 +1,29 @@
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: white;
+  padding: 7rem 2rem;
+
+  .sidebar__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .sidebar__content{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .sidebar__header{
+        font-size: var();
+      }
+    }
+  }
+}

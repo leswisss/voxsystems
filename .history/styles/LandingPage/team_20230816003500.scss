@@ -1,0 +1,17 @@
+.ourteam{
+  width: 100%;
+  padding: 5rem 0 0;
+
+  .ourteam__container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .team__top{
+      width: 100%;
+      display: flex;
+      gap: 2rem;
+      align-items: flex-end;
+    }
+  }
+}
