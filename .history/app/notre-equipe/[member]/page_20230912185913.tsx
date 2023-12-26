@@ -27,5 +27,3 @@ const MemberPage = () => {
 }
 
 export default MemberPage 
-
-export const runtime = 'edge';
